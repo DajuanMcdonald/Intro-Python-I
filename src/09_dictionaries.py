@@ -45,4 +45,17 @@ waypoints.append({"lat": 20, "lon": -90, "name": "middle of nowhere"})
 waypoints.insert(0, {"lon": -130, "name": "not a real place"})
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-print(waypoints)
+print(*[val for dict in waypoints for val in dict.values()], sep='\n')
+#
+# for index in range(len(waypoints)):
+#     for value in waypoints[index]:
+#         print(waypoints[index] [value])
+#
+# for dict in waypoints:
+#     for value in dict:
+#         print(dict[value])
+#
+# for dict in waypoints:
+#     for val in dict.values():
+#         print(val)
+
