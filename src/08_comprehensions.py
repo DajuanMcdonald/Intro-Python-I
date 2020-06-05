@@ -35,7 +35,7 @@ x = input("Enter comma-separated numbers: ").split(',')
 # What do you need between the square brackets to make it work?
 y = [el for el in x if int(el) % 2 == 0]
 l = [ele for ele in x if int(ele) % 3 == 0]
-p = [prime for prime in x if int(prime) == 1]
+p = [prime for prime in x if int(prime) % 1 == int(prime)]
 print(f' {y} are even numbers')
 print(f'{l} are odd numbers')
 print(f'{p} is a prime number')
