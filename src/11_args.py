@@ -17,9 +17,9 @@ print(f1(1, 2))
 #*args in function definitions in python is used to pass a variable number of arguments to a function.
 
 # YOUR CODE HERE
-def f2(*args) :
+def f2(*argsv) :
     result = 0
-    for x in args:
+    for x in argsv:
         result += x
     return result
 
